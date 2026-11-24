@@ -1,0 +1,2 @@
+import { imageAltMissing } from './imageAltMissing'; import { imageAltSuspicious } from './imageAltSuspicious'; import { headingOrder } from './headingOrder'; import { linkTextVague } from './linkTextVague'; import { formLabelMissing } from './formLabelMissing';
+export const ruleSetVersion='1.0.0'; export const registry=[imageAltMissing,imageAltSuspicious,headingOrder,linkTextVague,formLabelMissing];
