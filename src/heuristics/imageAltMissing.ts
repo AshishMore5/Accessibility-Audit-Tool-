@@ -1,0 +1,2 @@
+import type { HeuristicDefinition } from '../domain/types'; const url='https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html';
+export const imageAltMissing:HeuristicDefinition={ruleId:'IMG_ALT_MISSING',title:'Image alternative text missing',description:'Images need an alternative unless decorative.',applicability:['image'],severity:'violation',detector:b=>!Object.prototype.hasOwnProperty.call(b.attributes??{},'alt')?'No alt attribute was provided.':undefined,remediation:'Add concise alt text, or alt="" for a decorative image.',referenceUrl:url};
