@@ -54,3 +54,4 @@ Rules --> Runner
 ## Known limitations and future work
 
 No rendered DOM, keyboard-flow, or media-caption checks are performed. Future work: CSV export, reviewed/dismissed state, Playwright rendered checks, and a real portal adapter.
+
