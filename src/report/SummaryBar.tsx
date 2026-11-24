@@ -1,0 +1,2 @@
+import type { AuditRun } from '../domain/types';
+export function SummaryBar({run,visible}:{run:AuditRun;visible:number}){return <section aria-label="Audit summary" className="summary"><p><strong>Status:</strong> {run.status}</p><p>{run.checkedExplorationCount} explorations checked</p><p><strong>{run.summaryCounts.violation}</strong> violations · <strong>{run.summaryCounts['needs-review']}</strong> needs review · <strong>{visible}</strong> visible</p><small>Tool {run.toolVersion} · Rules {run.ruleSetVersion}</small></section>}
