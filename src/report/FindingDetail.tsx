@@ -1,0 +1,2 @@
+import type { AuditFinding } from '../domain/types';
+export function FindingDetail({finding}:{finding:AuditFinding}){return <div className="detail"><p><strong>Rule:</strong> {finding.ruleId}</p><p><strong>Block:</strong> {finding.selector}</p><p><strong>Evidence:</strong> {finding.evidence}</p><p><strong>Impact:</strong> {finding.severity}</p>{finding.severity==='needs-review'&&<span className="badge">Needs human review</span>}<p><strong>Remediation:</strong> {finding.remediation}</p><a href={finding.referenceUrl}>WCAG 2.2 Understanding</a></div>}
