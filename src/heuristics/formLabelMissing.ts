@@ -1,0 +1,2 @@
+import type { HeuristicDefinition } from '../domain/types';
+export const formLabelMissing:HeuristicDefinition={ruleId:'FORM_LABEL_MISSING',title:'Form label missing',description:'Form fields need a visible or programmatic name.',applicability:['form-field'],severity:'violation',detector:b=>!b.attributes?.label&&!b.attributes?.['aria-label']?'No label or aria-label was provided.':undefined,remediation:'Associate a visible label or add an appropriate aria-label.',referenceUrl:'https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html'};
